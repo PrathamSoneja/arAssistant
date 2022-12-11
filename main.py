@@ -44,7 +44,7 @@ async def ans_ques(item_id: int, question: str):
     while 'score' not in outputs:
         outputs = bertModel(configfile, question, item_description)
         count=count+1
-        if count >= 15:
+        if count >= 5:
             raise HTTPException(status_code=404, detail="Error in fetching results")
 
     return {"question": question, "probability": str(np.round(outputs['score']*100, 3)), "answer": str(outputs['answer'])}
