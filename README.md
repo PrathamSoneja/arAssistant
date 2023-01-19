@@ -3,10 +3,13 @@
 Product Details API is an API that provides product information and question answering capabilities for the Store Assistant application. It uses the BERT-large-uncased-whole-word-masking-finetuned-SQUAD model to answer customer questions about products. The data is stored in SQLite database.
 ## Technical details
 
-    The API is built using FastAPI, a modern, fast, web framework for building APIs with Python.
-    The API uses the BERT-large-uncased-whole-word-masking-finetuned-SQUAD model, which is a pre-trained transformer-based model that has been fine-tuned on the SQuAD dataset for question answering tasks.
-    The API uses SQLite database to store product information
-    The API uses Hugging Face's transformers library to fine-tune the model and generate answers.
+The API is built using FastAPI, a modern, fast, web framework for building APIs with Python.
+
+The API uses the BERT-large-uncased-whole-word-masking-finetuned-SQUAD model, which is a pre-trained transformer-based model that has been fine-tuned on the SQuAD dataset for question answering tasks.
+
+The API uses SQLite database to store product information
+
+The API uses Hugging Face's transformers library to fine-tune the model and generate answers.
 
 ## API Endpoints
 
